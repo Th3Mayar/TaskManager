@@ -23,6 +23,7 @@
     padding: 10px;
     background-color: rgb(41, 192, 41);
     color: #fff;
+    cursor: pointer;
   }
   
   button:hover {
