@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-color: bisque;
+  }
+  
+  main {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  input {
+    padding: 11px;
+    width: 80%;
+    border: 2px solid #000;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: rgb(41, 192, 41);
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: rgb(54, 170, 54);
+  }
+  
+  form {
+    margin-bottom: 20px;
+    text-align: center;
+  
+    @media (max-width: 1250px) {
+      button {
+        width: max-width;
+        margin-top:10px;
+      }
+    }
+  }
+  
+  .task-content {
+    display: block;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid black;
+  }
+  
+  li {
+    border: 2px solid #ffff;
+    list-style: none;
+    display: flex;
+    background-color: green;
+    color: #ffff;
+    font-weight: bold;
+    box-shadow: rgb(0, 0, 0, 0) inset;
+    padding: 20px;
+  }
+  
+  .btnDelete {
+    background-color: red;
+    cursor: pointer;
+    border-radius: 20%;
+  }
+  
+  .btnDelete:hover {
+    background-color: rgb(253, 139, 139);
+    border: 2px solid #fff;
+  }
+  
+  .list-content {
+    align-items: center;
+  }
+  
+  .btnEdit {
+    border-radius: 20%;
+    cursor: pointer;
+  }
+  
+  .btnEdit:hover {
+    border-radius: 20%;
+    background-color: rgb(71, 208, 71);
+    border: 2px solid #fff;
+  }
+  
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .header-task {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .header-task div:first-child{
+    grid-column: span 3;
+    text-align: center;
+  }
+  
+  .header-task div:nth-child(2){
+    text-align: end;
+    margin-right: 40px;
+  }
